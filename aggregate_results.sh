@@ -5,7 +5,7 @@
 RESULTS_DIR="${1:-results}"
 
 echo "========================================"
-echo " Hyperparameter Sweep — Final Rankings"
+echo " Hyperparameter Sweep - Final Rankings"
 echo "========================================"
 echo ""
 

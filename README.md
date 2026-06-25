@@ -9,7 +9,7 @@ This is the standard pattern for HPC-scale ML experiments, grid searches, and an
 ```
 configs/
   sweep_params.csv        # 12 configurations (lr, batch, hidden, dropout, epochs)
-sweep_job.sh              # Job array script — 1 task per config row
+sweep_job.sh              # Job array script - 1 task per config row
 aggregate_results.sh      # Merges per-task CSVs into a ranked leaderboard
 results/
   task_ARRAYID_TASK.out   # Per-task stdout
@@ -36,7 +36,7 @@ LR=$(echo "$ROW" | cut -d, -f1)
 
 ## Results
 
-### sacct — all 12 tasks completed with exit code 0:0
+### sacct - all 12 tasks completed with exit code 0:0
 
 ![sacct showing all 12 array tasks 27_1 through 27_12 COMPLETED](screenshots/15_sweep_sacct.png)
 

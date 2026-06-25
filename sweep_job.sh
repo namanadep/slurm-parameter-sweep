@@ -27,7 +27,7 @@ echo "Config  : lr=$LR  batch=$BATCH  hidden=$HIDDEN  dropout=$DROPOUT  epochs=$
 echo "============================================"
 echo ""
 
-# Simulate training (SGD with noise — reproducible per task)
+# Simulate training (SGD with noise - reproducible per task)
 python3 - <<EOF
 import math, random
 
